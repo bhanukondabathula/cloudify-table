@@ -54,10 +54,11 @@ const DropdownMultiSelect = ({
             <div key={index} className={styles.option}>
               <input
                 type="checkbox"
+                id={`checkbox-${index}`} // Unique id for each checkbox
                 checked={selectedOptions.includes(option)}
                 onChange={() => toggleOptionSelection(option)}
               />
-              <label>{option}</label>
+              <label htmlFor={`checkbox-${index}`}>{option}</label> {/* Associate label with the checkbox */}
             </div>
           ))}
         </div>

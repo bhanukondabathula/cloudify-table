@@ -1,34 +1,33 @@
 .dropdownWrapper {
   position: relative;
-  width: 70%;
-  margin: 0 auto;
+  width: 80%;
   border: 1px solid #ccc;
-  padding: 20px;
+  padding: 5px;
   background-color: #fff;
   box-sizing: border-box;
   border-radius: 12px;
-  font-size: 16px;
+  font-size: 12px;
 }
 
 .selectedOptions {
   display: flex;
   align-items: center;
   cursor: pointer;
-  padding: 10px;
+  padding: 6px;
   border-radius: 12px;
   background-color: #fff;
 }
 
 .selectedOptions span {
   flex-grow: 1;
-  font-size: 16px;
+  font-size: 12px;
   word-wrap: break-word;
   color: #333;
 }
 
 .arrow {
-  font-size: 18px;
-  margin-left: 10px;
+  font-size: 16px;
+  margin-left: 5px;
   color: #333;
   text-align: right;
 }
@@ -41,7 +40,7 @@
   margin-top: 5px;
   border: 1px solid #ddd;
   background-color: white;
-  padding: 10px;
+  padding: 4px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   z-index: 10;
   border-radius: 6px;
@@ -67,6 +66,7 @@
   border: 1px solid #ddd;
   border-radius: 6px;
   margin-right: 10px;
+  width: 70%;
 }
 
 .addOptionButton {
@@ -75,38 +75,37 @@
   color: white;
   border: none;
   cursor: pointer;
-  border-radius: 8px;
-  gap: 12px; 
+  border-radius: 6px;
   transition: background-color 0.3s;
+  gap: 12px; 
   display: flex;
-  align-items: center;
+align-items: center;
 }
 
 .addOptionButton:hover {
   background-color: #bdc1c6;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
+
   .dropdownWrapper {
-    max-width: 100%;
+    padding: 20px;
   }
 
   .selectedOptions {
-    font-size: 12px;
-    padding: 8px;
+    font-size: 16px;
+    padding: 10px;
   }
 
   .addOptionInput {
-    padding: 6px;
-    font-size: 12px;
+    font-size: 16px;
+    width: 100%;
   }
 
   .addOptionButton {
-    padding: 6px 10px;
-    font-size: 12px;
+    font-size: 16px;
     gap: 12px; 
     display: flex;
   align-items: center;
-  
-  }
+ }
 }
