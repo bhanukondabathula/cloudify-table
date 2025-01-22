@@ -1,0 +1,112 @@
+.dropdownWrapper {
+  position: relative;
+  width: 70%;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  padding: 20px;
+  background-color: #fff;
+  box-sizing: border-box;
+  border-radius: 12px;
+  font-size: 16px;
+}
+
+.selectedOptions {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 12px;
+  background-color: #fff;
+}
+
+.selectedOptions span {
+  flex-grow: 1;
+  font-size: 16px;
+  word-wrap: break-word;
+  color: #333;
+}
+
+.arrow {
+  font-size: 18px;
+  margin-left: 10px;
+  color: #333;
+  text-align: right;
+}
+
+.optionsList {
+  display: flex;
+  flex-direction: column;
+  max-height: 200px;
+  overflow-y: auto;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  background-color: white;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  border-radius: 6px;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  margin: 8px 0;
+}
+
+.addOptionWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.addOptionInput {
+  flex-grow: 1;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-right: 10px;
+}
+
+.addOptionButton {
+  padding: 8px 12px;
+  background-color: #141414;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  gap: 12px; 
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+}
+
+.addOptionButton:hover {
+  background-color: #bdc1c6;
+}
+
+@media (max-width: 768px) {
+  .dropdownWrapper {
+    max-width: 100%;
+  }
+
+  .selectedOptions {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .addOptionInput {
+    padding: 6px;
+    font-size: 12px;
+  }
+
+  .addOptionButton {
+    padding: 6px 10px;
+    font-size: 12px;
+    gap: 12px; 
+    display: flex;
+  align-items: center;
+  
+  }
+}
